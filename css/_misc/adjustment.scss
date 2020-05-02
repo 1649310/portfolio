@@ -1,0 +1,64 @@
+// adjustment
+$footer-height: 50px;
+$container-width: 940px;
+
+//adjustment styles
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: FiraSans, sans-serif;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  background: $white;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-width: $container-width + 20px;
+
+  &:after {
+    content: "";
+    display: block;
+    height: $footer-height;
+    overflow: hidden;
+  }
+}
+.maincontent {
+  padding-bottom: 50px;
+}
+.container {
+  width: $container-width;
+  margin: 0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+.footer {
+  width: 100%;
+  height: $footer-height;
+  background: #ccc;
+  margin-top: -$footer-height;
+  position: relative;
+  min-width: $container-width + 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+}

@@ -1,0 +1,64 @@
+.footer {
+  background: $black;
+  @extend %clearfix;
+}
+.footer__left {
+  float: left;
+  width: 50%;
+}
+
+.copyright {
+  color: #9c9c9c;
+  font-size: 14px;
+  @include inlineblock(middle);
+  font-weight: 300;
+  padding: 15px 0;
+}
+
+.footer__right {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+.socials__item {
+  display: inline-block;
+}
+.socials__link {
+  display: block;
+  background: url(../img/footer/sprites.png) 0 0 no-repeat;
+  width: 42px;
+  height: 42px;
+
+  &:hover {
+    background: url(../img/footer/sprites1.png) 0 0 no-repeat;
+    transition: 0.3s;
+  }
+}
+
+.socials__link-link {
+  background-position: 0 0;
+
+  &:hover {
+    background-position: 0 0;
+    opacity: 0.8;
+  }
+}
+
+.socials__link-insta {
+  background-position: -43px 0;
+
+  &:hover {
+    background-position: -43px 0;
+    opacity: 0.8;
+  }
+}
+
+.socials__link-fb {
+  background-position: -83px 0;
+
+  &:hover {
+    background-position: -83px 0;
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,154 @@
+.career__left {
+  width: 220px;
+  float: left;
+}
+
+.slider {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.slider__list-wrap {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+}
+.slider__list {
+  @extend %clearfix;
+  width: 1000px;
+  position: relative;
+  transition: 0.3s;
+  left: 0px;
+}
+.slider__item {
+  float: left;
+  display: block;
+  width: 220px;
+  height: 220px;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.slider__controls-button {
+  position: absolute;
+  top: 90px;
+  color: $green;
+}
+.slider__controls-button_next {
+  right: -1px;
+}
+
+.slider__controls-button_prev {
+  left: -1px;
+}
+
+.career__right {
+  width: 460px;
+  float: right;
+}
+
+.career__item {
+  text-align: right;
+  margin-bottom: 20px;
+  color: #727272;
+  &:hover {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  &:first-child {
+    .career__block {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &:last-child {
+    .career__block {
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+.career__block {
+  width: 380px;
+  border: 1px solid #dedede;
+  display: inline-block;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  border-radius: 9px;
+  padding: 15px;
+  font-weight: 300;
+
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 1px;
+    background: #dddddd;
+    position: absolute;
+    left: -30px;
+  }
+
+  &:before {
+    top: 0;
+    bottom: 50%;
+    margin-bottom: 10px;
+  }
+
+  &:after {
+    bottom: -22px;
+    top: 50%;
+    margin-top: 10px;
+  }
+
+  &:hover {
+    background-color: $blue;
+    color: #fff;
+  }
+  &:hover .career__year {
+    color: $blue;
+    font-weight: 700;
+  }
+}
+
+.career__title {
+  font-weight: 700;
+}
+
+.career__year {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  line-height: 16px;
+  margin-top: -8px;
+  margin-right: 43px;
+
+  &:after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: $blue;
+    border-radius: 50%;
+    position: absolute;
+    right: -19px;
+    top: 50%;
+    margin-top: -5px;
+    z-index: 1;
+  }
+}
+
+.career__item:hover .career__year::after {
+  width: 15px;
+  height: 15px;
+  right: -21px;
+  top: 50%;
+  margin-top: -8px;
+  opacity: 0.8;
+}

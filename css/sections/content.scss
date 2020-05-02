@@ -1,0 +1,77 @@
+.page-content {
+  width: 710px;
+  float: right;
+}
+.about {
+  @extend %clearfix;
+}
+.about__left {
+  width: 290px;
+  float: left;
+}
+
+.about__pic {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+}
+.about__pic-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about__right {
+  width: 390px;
+  float: right;
+}
+
+.title {
+  font-size: 35px;
+  color: $black;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+.about__desc {
+  margin-bottom: 50px;
+  height: 350px;
+  overflow: auto;
+  p {
+    font-size: 18px;
+    color: #646464;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 300;
+  }
+}
+
+.about__download {
+  text-align: right;
+}
+
+.about__download-link {
+  border: 2px solid $red;
+  border-radius: 50px;
+  display: inline-block;
+  color: $red;
+  text-decoration: none;
+  padding: 9px 12px;
+  font-size: 14px;
+  font-weight: 700;
+
+  &:hover {
+    color: #fff;
+    background-color: $red;
+    transition: 0.3s;
+  }
+}
+
+.about__download-link-dowload {
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f019";
+  }
+}

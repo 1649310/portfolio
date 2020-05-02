@@ -1,0 +1,22 @@
+//vars
+$white: #f6f6f6;
+$blue: #33c1e3;
+$black: #646464;
+$green: #727272;
+$red: #e85f61;
+
+// layout
+@import "_misc/mixins";
+@import "_misc/normalize";
+@import "_misc/adjustment";
+@import "plugints/font-awesome";
+@import "plugints/_mCustomScrollbar";
+
+// styles
+@import "sections/auth";
+@import "sections/header";
+@import "sections/sidebar";
+@import "sections/content";
+@import "sections/footer";
+@import "sections/career";
+@import "sections/portfolio";

@@ -1,0 +1,50 @@
+.content {
+  .container {
+    @extend %clearfix;
+  }
+}
+.sidebar {
+  width: 220px;
+  float: left;
+}
+
+.nav__link {
+  display: block;
+  padding: 10px 20px 10px 0;
+  text-align: right;
+  border-right: 5px solid transparent;
+  font-size: 18px;
+  text-decoration: none;
+  color: $black;
+  font-weight: 400;
+
+  &:hover {
+    color: $blue;
+    transition: 0.3s;
+  }
+}
+
+.nav__link-active {
+  color: $blue;
+  border-color: $blue;
+  font-weight: 700;
+}
+
+.nav__link-user-secret {
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f21b";
+  }
+}
+.nav__link-rocket {
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f135";
+  }
+}
+.nav__link-briefcase {
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f0b1";
+  }
+}
