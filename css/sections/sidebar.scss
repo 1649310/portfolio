@@ -7,6 +7,9 @@
   width: 220px;
   float: left;
 }
+.nav__list {
+  list-style: none;
+}
 
 .nav__link {
   display: block;
@@ -17,7 +20,7 @@
   text-decoration: none;
   color: $black;
   font-weight: 400;
-
+  list-style: none;
   &:hover {
     color: $blue;
     transition: 0.3s;

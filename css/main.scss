@@ -10,13 +10,14 @@ $red: #e85f61;
 @import "_misc/normalize";
 @import "_misc/adjustment";
 @import "plugints/font-awesome";
-@import "plugints/_mCustomScrollbar";
+//@import "plugints/_mCustomScrollbar";
 
 // styles
 @import "sections/auth";
 @import "sections/header";
 @import "sections/sidebar";
 @import "sections/content";
+@import "sections/style";
 @import "sections/footer";
 @import "sections/career";
 @import "sections/portfolio";

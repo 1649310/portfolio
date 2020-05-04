@@ -45,7 +45,6 @@
   color: $blue;
   font-weight: 700;
   text-decoration: none;
-  // background: url('../img/decor/dot.png') 0 bottom repeat-x;
   font-size: 18px;
 
   &:hover {
@@ -114,6 +113,7 @@
 }
 
 .contacts__dropdown {
+  list-style: none;
   width: 270px;
   height: 125px;
   background: #fff;

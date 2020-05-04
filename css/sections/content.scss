@@ -10,6 +10,11 @@
   float: left;
 }
 
+.ic-github {
+  width: 50px;
+  height: 50px;
+  background-image: url("/images/github.svg");
+}
 .about__pic {
   overflow: hidden;
   border-radius: 50%;
@@ -61,7 +66,8 @@
   padding: 9px 12px;
   font-size: 14px;
   font-weight: 700;
-
+  cursor: pointer;
+  outline: none;
   &:hover {
     color: #fff;
     background-color: $red;
@@ -74,4 +80,18 @@
     font-family: "FontAwesome";
     content: "\f019";
   }
+}
+
+.about .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: $blue;
+}
+
+.about .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+  background-color: $blue;
+}
+.about .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+  background-color: $blue;
+}
+.about .mCSB_scrollTools .mCSB_draggerRail {
+  background: #f6f6f6;
 }

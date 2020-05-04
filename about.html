@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- <meta name="viewport" content="width=960"> -->
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/mCustomScrollbar.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;700&display=swap"
       rel="stylesheet"
@@ -125,8 +126,7 @@
                     <p>Привет!</p>
                     <p>
                       Меня зовут Юлия! Я HTML-верстальщик и начинающий Front-end
-                      разработчик. Закончила высшее образование в НПУ
-                      им.М.П.Драгоманова, по специальности "Менеджер".
+                      разработчик. 
                     </p>
                     <p>
                       Опыт работы в разработке около года. Обучалась
@@ -152,12 +152,11 @@
                     </p>
                   </div>
                   <div class="about__download">
-                    <a
-                      href="YuliyaMikhaylenko_CV.pdf"
+                    <button
                       class="about__download-link about__download-link-dowload"
                     >
-                      Скачать резюме
-                    </a>
+                      Посмотреть резюме
+                    </button>
                   </div>
                 </div>
               </div>
@@ -179,34 +178,259 @@
               <a
                 href="https://www.linkedin.com/in/yuliya-mikhaylenko-84a591122/"
                 class="socials__link socials__link-link"
-              ></a>
+              >
+                <img
+                  class="socials__link-img"
+                  src="img/footer/linkedin.svg"
+                  alt=""
+                />
+              </a>
             </li>
             <li class="socials__item">
               <a
-                href="https://www.instagram.com/photo_yulenka_aleksandrovna/"
-                class="socials__link socials__link-insta"
-              ></a>
+                href="https://web.telegram.org/#/im"
+                class="socials__link socials__link-teleg"
+              >
+                <img
+                  class="socials__link-img"
+                  src="img/footer/telegram.svg"
+                  alt=""
+                />
+              </a>
             </li>
             <li class="socials__item">
               <a
-                href="https://www.facebook.com/yuliy.mikhajlenko"
-                class="socials__link socials__link-fb"
-              ></a>
+                href="https://github.com/1649310"
+                class="socials__link socials__link-github"
+              >
+                <img
+                  class="socials__link-img"
+                  src="/img/footer/github.svg"
+                  alt=""
+                />
+              </a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
+    <div class="popup">
+      <!-- SIDEBAR -->
+      <div class="popup__sidebar">
+        <div class="popup-sidebar__photo">
+          <img
+            class="popup-sidebar__photo-img"
+            src="img/content/photo.jpg"
+            alt=""
+          />
+        </div>
+        <div class="popup-sidebar__content">
+          <!-- SIDEBAR CONTACTS-->
+          <div class="popup-sidebar__contacts">
+            <h3 class="popup-sidebar__title">Contacts</h3>
+            <div class="popup-contacts__text">
+              <span class="popup-contacts__type">C:</span>
+              <a class="popup-contacts__link" href="tel:+380501649310"
+                >+38 (050) 164-93-10</a
+              >
+            </div>
+            <div class="popup-contacts__text">
+              <span class="popup-contacts__type">E:</span>
+              <a
+                class="popup-contacts__link"
+                href="mailto:mikhaylenkoyuliya@gmail.com"
+                >mikhaylenkoyuliya@gmail.com</a
+              >
+            </div>
+            <div class="popup-contacts__text">
+              <span class="popup-contacts__type">S:</span>
+              <a class="popup-contacts__link" href="skype:yuliy-mikhajlenko"
+                >yuliy-mikhajlenko</a
+              >
+            </div>
+          </div>
+          <!-- TECH SKILLS -->
+          <div class="popup__tech-skills">
+            <h3 class="popup-sidebar__title">Tech Skills</h3>
+            <ul class="tech-skills__list">
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">HTML5(PUG)</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">CSS3(SCSS/SASS)</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">FLEXBOX</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">CSS Grid</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">JavaScript basics</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">jQuery</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">BEM-naming</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">Bootstrap</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">GULP</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">GIT(github)</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">Photoshop/Sketch/Figma</span>
+              </li>
+              <li class="tech-skills__item">
+                <span class="tech-skils__text">VS Code</span>
+              </li>
+            </ul>
+          </div>
+          <!-- SOFT SKILLS-->
+          <div class="popup__soft-skills">
+            <h3 class="popup-sidebar__title">Soft Skills</h3>
+            <ul class="soft-skills__list">
+              <li class="soft-skills__item">
+                <span class="soft-skils__text">Scrum</span>
+              </li>
+              <li class="soft-skills__item">
+                <span class="soft-skils__text">Agile</span>
+              </li>
+              <li class="soft-skills__item">
+                <span class="soft-skils__text">Teamwork</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
+      <!-- PAGE-CONTENT -->
+      <div class="popup-page-content">
+        <div class="popup-container">
+          <button class="popup-close" type="button">X</button>
+          <div class="about__content">
+            <h2 class="about__position">Junior Front-End Developer</h2>
+            <h1 class="popup-title">Yuliya Mikhaylenko</h1>
+          </div>
+          <!-- work Experience -->
+          <div class="work__content">
+            <h3 class="content__title">Work Experience</h3>
+            <!-- company 1 -->
+            <div class="work__experience">
+              <h4 class="work__title">
+                Front-End Developer
+                <span class="work__company">Freelance</span>
+              </h4>
+              <span class="work__data">
+                2019 - up to now <span class="work__divider">|</span> Ukraine
+              </span>
+              <ul class="work__duties-list">
+                <li class="work__duties-item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </li>
+                <li class="work__duties-item">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam ipsum ipsa facilis tenetur veritatis, unde quaerat,
+                  reiciendis voluptates
+                </li>
+                <li class="work__duties-item">
+                  Pariatur fuga totam id provident autem optio, explicabo fugit
+                  amet?Suscipit voluptatibus quo magni perspiciatis? Similique
+                  eligendi quae perspiciatis saepe, laudantium rerum!
+                </li>
+              </ul>
+            </div>
+            <!-- company 2 -->
+            <div class="work__experience">
+              <h4 class="work__title">
+                Manager <span class="work__company">Roga & Kopyta New</span>
+              </h4>
+              <span class="work__data">
+                March 2015 - October 2018
+                <span class="work__divider">| </span> Ukraine
+              </span>
+              <ul class="work__duties-list">
+                <li class="work__duties-item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </li>
+                <li class="work__duties-item">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam ipsum ipsa facilis tenetur veritatis, unde quaerat,
+                  reiciendis
+                </li>
+                <li class="work__duties-item">
+                  laboriosam eius expedita soluta iusto fugit, laborum
+                  consectetur! Magni aspernatur ipsam quas?
+                </li>
+                <li class="work__duties-item">
+                  Pariatur fuga totam id provident autem optio, explicabo fugit
+                  amet?Suscipit voluptatibus
+                </li>
+              </ul>
+            </div>
+
+            <!-- company 3 -->
+            <div class="work__experience work__experience_bottom">
+              <h4 class="work__title">
+                Manager <span class="work__company">Roga & Kopyta LLC</span>
+              </h4>
+              <span class="work__data">
+                June 2014 - February 2015<span class="work__divider">|</span>
+                Ukraine
+              </span>
+              <ul class="work__duties-list">
+                <li class="work__duties-item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </li>
+                <li class="work__duties-item">
+                  Quis ipsum suspendisse ultrices gravida.
+                </li>
+                <li class="work__duties-item">
+                  Risus commodo viverra maecenas.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- education -->
+          <div class="education__content">
+            <h3 class="content__title">Education</h3>
+            <p class="education__name">
+              National Pedagogical Dragomanov University
+            </p>
+            <p class="education__specialist">MA in Small Business Management</p>
+            <span class="work__data"
+              >Septermber 2006 - June 2011
+              <span class="work__divider">|</span> Ukraine</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/jquery-3.0.1.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.js"></script>
 
     <script>
       (function($) {
         $(window).on("load", function() {
-          $(".content").mCustomScrollbar();
+          $(".mCustomScrollbar").mCustomScrollbar();
         });
       })(jQuery);
+    </script>
+
+    <script>
+      $(".about__download-link").click(function() {
+        $(".popup").addClass("active");
+      });
+      $(".popup-close").click(function() {
+        $(".popup").removeClass("active");
+      });
     </script>
   </body>
 </html>
