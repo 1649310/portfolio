@@ -84,13 +84,15 @@
 
 .about .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: $blue;
+  height: 130px;
 }
 
 .about .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
   background-color: $blue;
 }
-.about .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+.about .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
   background-color: $blue;
+  height: 130px;
 }
 .about .mCSB_scrollTools .mCSB_draggerRail {
   background: #f6f6f6;

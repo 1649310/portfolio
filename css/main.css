@@ -3011,20 +3011,22 @@ h6 {
   content: "\f019"; }
 
 .about .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #33c1e3; }
+  background-color: #33c1e3;
+  height: 130px; }
 
 .about .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
   background-color: #33c1e3; }
 
-.about .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
-  background-color: #33c1e3; }
+.about .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+  background-color: #33c1e3;
+  height: 130px; }
 
 .about .mCSB_scrollTools .mCSB_draggerRail {
   background: #f6f6f6; }
 
 .popup {
   background: #fff;
-  width: 1200px;
+  width: 1147px;
   margin: 0 auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
   z-index: 1;
@@ -3050,14 +3052,14 @@ h6 {
 
 .popup-sidebar__photo {
   width: 370px;
-  margin-top: 40px; }
+  margin-top: 20px; }
 
 .popup-sidebar__photo-img {
   max-width: 100%;
   max-height: 100%; }
 
 .popup-sidebar__content {
-  padding: 55px; }
+  padding: 50px 50px 15px; }
 
 .popup-sidebar__title {
   font-size: 22px;
@@ -3067,7 +3069,7 @@ h6 {
 
 .popup-sidebar__contacts,
 .popup__tech-skills {
-  margin-bottom: 45px; }
+  margin-bottom: 35px; }
 
 .popup-contacts__text {
   font-size: 14px;
@@ -3094,7 +3096,7 @@ h6 {
 
 /* PAGE-CONTENT */
 .popup-container {
-  padding: 60px 90px;
+  padding: 60px 90px 45px;
   position: relative; }
 
 .popup-close {
@@ -3116,7 +3118,7 @@ h6 {
   margin-bottom: 15px; }
 
 .popup-title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700; }
 
 .projects__content {
@@ -3146,7 +3148,7 @@ h6 {
   font-weight: 100; }
 
 .work__content {
-  margin-bottom: 45px; }
+  margin-bottom: 30px; }
 
 .work__experience {
   margin-bottom: 25px; }
@@ -3157,7 +3159,7 @@ h6 {
 .work__title {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 10px; }
+  margin-bottom: 7px; }
 
 .work__company {
   color: #ff761b; }
