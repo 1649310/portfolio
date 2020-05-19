@@ -1,27 +1,50 @@
 .page-content {
-  width: 710px;
+  width: rem(710px);
   float: right;
+
+  @include laptop {
+    width: 100%;
+    float: none;
+  }
 }
 .about {
   @extend %clearfix;
 }
 .about__left {
-  width: 290px;
+  width: rem(290px);
   float: left;
+  @include laptop {
+    text-align: center;
+  }
+  @include tablet {
+    width: rem(215px);
+  }
+  @include phone {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .ic-github {
-  width: 50px;
-  height: 50px;
+  width: rem(50px);
+  height: rem(50px);
   background-image: url("/images/github.svg");
 }
 .about__pic {
   overflow: hidden;
   border-radius: 50%;
-  border: 5px solid #fff;
+  border: rem(5px) solid #fff;
   display: inline-block;
-  width: 220px;
-  height: 220px;
+  width: rem(220px);
+  height: rem(220px);
+  @include tablet {
+    width: 180px;
+    height: 180px;
+  }
+  @include phone {
+    width: 220px;
+    height: 220px;
+  }
 }
 .about__pic-img {
   display: block;
@@ -30,25 +53,37 @@
 }
 
 .about__right {
-  width: 390px;
+  width: rem(390px);
   float: right;
+  @include laptop {
+    width: rem(450px);
+  }
+  @include tablet {
+    width: 335px;
+  }
+  @include phone {
+    width: 100%;
+  }
 }
 
 .title {
-  font-size: 35px;
+  font-size: rem(35px);
   color: $black;
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
   font-weight: 500;
+  @include laptop {
+    font-size: rem(30px);
+  }
 }
 .about__desc {
-  margin-bottom: 50px;
-  height: 350px;
+  margin-bottom: rem(50px);
+  height: rem(350px);
   overflow: auto;
   p {
-    font-size: 18px;
+    font-size: rem(18px);
     color: #646464;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
     font-weight: 300;
   }
 }
@@ -63,8 +98,8 @@
   display: inline-block;
   color: $red;
   text-decoration: none;
-  padding: 9px 12px;
-  font-size: 14px;
+  padding: rem(9px) rem(12px);
+  font-size: rem(14px);
   font-weight: 700;
   cursor: pointer;
   outline: none;
@@ -84,7 +119,7 @@
 
 .about .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: $blue;
-  height: 130px;
+  height: rem(130px);
 }
 
 .about .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
@@ -92,7 +127,7 @@
 }
 .about .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
   background-color: $blue;
-  height: 130px;
+  height: rem(130px);
 }
 .about .mCSB_scrollTools .mCSB_draggerRail {
   background: #f6f6f6;

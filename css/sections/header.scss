@@ -2,7 +2,7 @@
   background: #fff;
   @include box-shadow(0 1px 3px 0 rgba(#000, 0.2));
   @extend %clearfix;
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 
 .header__left {
@@ -12,12 +12,12 @@
 
 .user__avatar {
   @include inlineblock(middle);
-  width: 60px;
-  height: 60px;
+  width: rem(60px);
+  height: rem(60px);
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid #d6d6d6;
-  margin: 10px 0;
+  margin: rem(10px) 0;
 
   img {
     max-height: 100%;
@@ -27,8 +27,8 @@
 .user__username {
   @include inlineblock(middle);
   font-weight: 400;
-  font-size: 18px;
-  padding-left: 15px;
+  font-size: rem(18px);
+  padding-left: rem(15px);
   color: $black;
 }
 
@@ -39,13 +39,13 @@
 }
 
 .contacts {
-  padding: 27px 0;
+  padding: rem(27px) 0;
 }
 .contacts__link {
   color: $blue;
   font-weight: 700;
   text-decoration: none;
-  font-size: 18px;
+  font-size: rem(18px);
 
   &:hover {
     color: $red;
@@ -55,10 +55,13 @@
   &:before {
     content: "..........................";
     color: $blue;
-    font-size: 11px;
+    font-size: rem(11px);
     letter-spacing: 2px;
     position: absolute;
-    bottom: 23px;
+    bottom: rem(23px);
+    @include laptop {
+      content: ".........................";
+    }
   }
 }
 .contacts__link:hover:before {
@@ -106,7 +109,7 @@
 
   &:hover {
     .contacts__dropdown {
-      left: 320px;
+      left: rem(320px);
       opacity: 1;
     }
   }
@@ -114,23 +117,26 @@
 
 .contacts__dropdown {
   list-style: none;
-  width: 270px;
-  height: 125px;
+  width: rem(270px);
+  height: rem(125px);
   background: #fff;
   position: absolute;
   top: 70%;
-  margin-left: -50px;
+  margin-left: rem(-50px);
   z-index: 1000;
-  left: -9999px;
+  left: rem(-9999px);
   border: 1px solid #ded;
   text-align: center;
   border-radius: 8px;
-  margin-top: 10px;
+  margin-top: rem(10px);
   letter-spacing: -0.2px;
   line-height: 27px;
   opacity: 0;
   transition: opacity 0.5s;
-  padding: 15px;
+  padding: rem(15px);
+  @include laptop {
+    margin-left: -7.625rem;
+  }
 }
 
 .contacts__dropdown:before {
@@ -139,14 +145,14 @@
   position: absolute;
   left: 0;
   right: 0;
-  height: 25px;
-  top: -23px;
+  height: rem(25px);
+  top: rem(-23px);
 }
 
 .triangle {
   width: 0px;
   height: 0px;
-  border: 10px solid transparent;
+  border: rem(10px) solid transparent;
   border-bottom-color: #ded;
   border-top: 0;
   position: absolute;
@@ -156,11 +162,11 @@
   &:after {
     content: "";
     display: block;
-    border: 15px solid transparent;
+    border: rem(15px) solid transparent;
     border-bottom-color: #fff;
     border-top: 0;
     position: absolute;
     top: 1px;
-    left: -15px;
+    left: rem(-15px);
   }
 }

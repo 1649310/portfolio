@@ -5,20 +5,26 @@
 .footer__left {
   float: left;
   width: 50%;
+  @include tablet {
+    width: 70%;
+  }
 }
 
 .copyright {
   color: #9c9c9c;
-  font-size: 14px;
+  font-size: rem(14px);
   @include inlineblock(middle);
   font-weight: 300;
-  padding: 15px 0;
+  padding: rem(15px) 0;
 }
 
 .footer__right {
   float: right;
   width: 50%;
   text-align: right;
+  @include tablet {
+    width: 30%;
+  }
 }
 .socials {
   display: flex;
@@ -27,8 +33,8 @@
 }
 .socials__item {
   list-style: none;
-  margin-right: 10px;
-  margin-top: 8px;
+  margin-right: rem(10px);
+  margin-top: rem(8px);
   &:last-child {
     margin-right: 0;
   }
@@ -42,6 +48,6 @@
 }
 
 .socials__link-img {
-  width: 35px;
-  height: 35px;
+  width: rem(35px);
+  height: rem(35px);
 }

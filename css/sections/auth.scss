@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
   text-align: center;
-  min-width: 310px;
+  min-width: rem(310px);
 
   &:before {
     content: "";
@@ -18,7 +18,7 @@
 
 .auth__wrapper {
   overflow: hidden;
-  padding-top: 90px;
+  padding-top: rem(90px);
   background: #fff;
   border-radius: 8px;
   @include box-shadow(0 1px 3px 0 rgba(#000, 0.2));
@@ -26,24 +26,24 @@
 
 .auth {
   display: inline-block;
-  width: 300px;
+  width: rem(300px);
   border-radius: 8px;
   vertical-align: middle;
   position: relative;
-  margin-top: 70px;
+  margin-top: rem(70px);
 }
 
 .auth__avatar {
-  width: 140px;
-  height: 140px;
+  width: rem(140px);
+  height: rem(140px);
   border-radius: 50%;
   overflow: hidden;
   display: inline-block;
   border: 2px solid #d6d6d6;
   position: absolute;
   left: 50%;
-  margin-top: -70px;
-  margin-left: -70px;
+  margin-top: rem(-70px);
+  margin-left: rem(-70px);
 
   img {
     max-height: 100%;
@@ -52,16 +52,16 @@
 }
 
 .auth__name {
-  font-size: 21px;
-  padding: 0 50px;
-  margin-bottom: 20px;
+  font-size: rem(21px);
+  padding: 0 rem(50px);
+  margin-bottom: rem(20px);
   color: $black;
   font-weight: 400;
 }
 
 .auth__btn {
   background: $blue;
-  padding: 20px 0;
+  padding: rem(20px) 0;
   text-align: center;
 }
 
@@ -71,8 +71,8 @@
   border: 3px solid #fff;
   text-decoration: none;
   border-radius: 50px;
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: rem(10px) rem(15px);
+  font-size: rem(14px);
   font-weight: 700;
   &:hover {
     color: $blue;

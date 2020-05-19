@@ -10,7 +10,7 @@ $red: #e85f61;
 @import "_misc/normalize";
 @import "_misc/adjustment";
 @import "plugints/font-awesome";
-//@import "plugints/_mCustomScrollbar";
+@import "plugints/mCustomScrollbar";
 
 // styles
 @import "sections/auth";
@@ -21,3 +21,6 @@ $red: #e85f61;
 @import "sections/footer";
 @import "sections/career";
 @import "sections/portfolio";
+
+//media
+@import "adaptive/media";

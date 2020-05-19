@@ -1,24 +1,32 @@
 .portfolio__list {
   @extend %clearfix;
-  margin: 0 -10px;
+  margin: 0 rem(-10px);
   list-style: none;
 }
 
 .portfolio__item {
   float: left;
   width: 33.3%;
+  @include laptop {
+    width: 32%;
+    display: inline-block;
+    float: none;
+  }
 }
 
 .portfolio__pic-img {
   display: block;
-  max-width: 211px;
-  max-height: 99px;
+  max-width: rem(211px);
+  max-height: rem(99px);
+  @include tablet {
+    max-width: 180px;
+  }
 }
 .portfolio__link {
-  margin: 10px;
+  margin: rem(10px);
   display: inline-block;
   @include box-shadow(0 1px 3px 0 rgba(#000, 0.2));
-  border-radius: 10px;
+  border-radius: rem(10px);
   overflow: hidden;
   text-decoration: none;
 
@@ -28,14 +36,17 @@
 }
 .portfolio__desc {
   background: #fff;
-  padding: 20px;
-  max-width: 211px;
-  max-height: 128px;
+  padding: rem(20px);
+  max-width: rem(211px);
+  max-height: rem(128px);
 }
 .portfolio__desc-title {
   font-weight: 400;
-  font-size: 21px;
+  font-size: rem(21px);
   color: $blue;
+  @include tablet {
+    font-size: 18px;
+  }
 
   &:hover {
     color: $red;
@@ -44,36 +55,36 @@
 }
 .portfolio__desc-text {
   font-weight: 500;
-  font-size: 14px;
+  font-size: rem(14px);
   color: $green;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 .portfolio__desc-type,
 .portfolio__desc-desktop,
 .portfolio__desc-tablet,
 .portfolio__desc-mobile {
   color: #aeaeae;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 700;
 
   &:before {
     font-family: "FontAwesome";
     content: "\f108";
-    font-size: 18px;
-    margin: 0 5px;
+    font-size: rem(18px);
+    margin: 0 rem(5px);
   }
 }
 .portfolio__desc-tablet {
   &:before {
     font-family: "FontAwesome";
     content: "\f10a";
-    font-size: 18px;
+    font-size: rem(18px);
   }
 }
 .portfolio__desc-mobile {
   &:before {
     font-family: "FontAwesome";
     content: "\f10b";
-    margin: 0 5px;
+    margin: 0 rem(5px);
   }
 }

@@ -1,6 +1,7 @@
 .popup {
   background: #fff;
-  width: 1147px;
+  width: rem(1147px);
+  height: auto;
   margin: 0 auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
   z-index: 1;
@@ -25,47 +26,47 @@
 /* SIDEBAR */
 .popup__sidebar {
   background-color: #1e2939;
-  width: 370px;
+  width: rem(370px);
 }
 .popup-sidebar__photo {
-  width: 370px;
-  margin-top: 20px;
+  width: rem(370px);
+  margin-top: rem(20px);
 }
 .popup-sidebar__photo-img {
   max-width: 100%;
   max-height: 100%;
 }
 .popup-sidebar__content {
-  padding: 50px 50px 15px;
+  padding: rem(50px) rem(50px) rem(15px);
 }
 .popup-sidebar__title {
-  font-size: 22px;
+  font-size: rem(22px);
   font-weight: 700;
   color: #fff;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 .popup-sidebar__contacts,
 .popup__tech-skills {
-  margin-bottom: 35px;
+  margin-bottom: rem(35px);
 }
 .popup-contacts__text {
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
 }
 .popup-contacts__type {
   color: #fff;
   font-weight: 700;
-  margin-right: 10px;
+  margin-right: rem(10px);
 }
 .popup-contacts__link {
   color: #b5b9be;
 }
 .tech-skills__item,
 .soft-skills__item {
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
   color: #f5680a;
-  margin-left: 15px;
+  margin-left: rem(15px);
 }
 .tech-skils__text,
 .soft-skils__text {
@@ -73,7 +74,7 @@
 }
 /* PAGE-CONTENT */
 .popup-container {
-  padding: 60px 90px 45px;
+  padding: rem(60px) rem(90px) rem(45px);
   position: relative;
 }
 .popup-close {
@@ -82,41 +83,41 @@
   right: 0;
   border: none;
   outline: none;
-  width: 35px;
-  height: 35px;
+  width: rem(35px);
+  height: rem(35px);
   background-color: #f5680a;
   border-radius: 50%;
   cursor: pointer;
   color: #fff;
 }
 .about__position {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 .popup-title {
-  font-size: 30px;
+  font-size: rem(30px);
   font-weight: 700;
 }
 .projects__content {
-  margin-bottom: 40px;
+  margin-bottom: rem(40px);
 }
 .content__title {
-  font-size: 22px;
+  font-size: rem(22px);
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
 .projects__item {
   font-weight: 700;
-  margin-left: 17px;
+  margin-left: rem(17px);
 }
 .projects__link {
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
   color: #595959;
 }
 .tech__name {
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
   color: #595959;
 }
@@ -125,18 +126,18 @@
   font-weight: 100;
 }
 .work__content {
-  margin-bottom: 30px;
+  margin-bottom: rem(30px);
 }
 .work__experience {
-  margin-bottom: 25px;
+  margin-bottom: rem(25px);
 }
 .work__experience_bottom {
   margin-bottom: 0;
 }
 .work__title {
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 700;
-  margin-bottom: 7px;
+  margin-bottom: rem(7px);
 }
 .work__company {
   color: #ff761b;
@@ -150,22 +151,22 @@
   color: #000000;
 }
 .work__duties-list {
-  margin-top: 14px;
-  margin-bottom: 30px;
+  margin-top: rem(14px);
+  margin-bottom: rem(30px);
 }
 .work__duties-tem {
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 400;
   color: #595959;
 }
 .education__name {
   color: #ff761b;
-  font-size: 16px;
+  font-size: rem(16px);
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: rem(10px);
 }
 .education__specialist {
   color: #000000;
-  font-size: 14px;
+  font-size: rem(14px);
   font-weight: 700;
 }

@@ -1,5 +1,5 @@
 .career__left {
-  width: 220px;
+  width: rem(220px);
   float: left;
 }
 
@@ -9,13 +9,13 @@
   overflow: hidden;
 }
 .slider__list-wrap {
-  width: 220px;
-  height: 220px;
+  width: rem(220px);
+  height: rem(220px);
   overflow: hidden;
 }
 .slider__list {
   @extend %clearfix;
-  width: 1000px;
+  width: rem(1000px);
   position: relative;
   transition: 0.3s;
   left: 0px;
@@ -23,8 +23,8 @@
 .slider__item {
   float: left;
   display: block;
-  width: 220px;
-  height: 220px;
+  width: rem(220px);
+  height: rem(220px);
 
   img {
     max-width: 100%;
@@ -34,7 +34,7 @@
 
 .slider__controls-button {
   position: absolute;
-  top: 90px;
+  top: rem(90px);
   color: $green;
 }
 .slider__controls-button_next {
@@ -46,7 +46,7 @@
 }
 
 .career__right {
-  width: 460px;
+  width: rem(460px);
   float: right;
 }
 .career__list {
@@ -54,7 +54,7 @@
 }
 .career__item {
   text-align: right;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
   color: #727272;
   &:hover {
     cursor: pointer;
@@ -78,14 +78,14 @@
   }
 }
 .career__block {
-  width: 380px;
+  width: rem(380px);
   border: 1px solid #dedede;
   display: inline-block;
   position: relative;
   text-align: left;
   background: #fff;
   border-radius: 9px;
-  padding: 15px;
+  padding: rem(15px);
   font-weight: 300;
 
   &:before,
@@ -95,19 +95,19 @@
     width: 1px;
     background: #dddddd;
     position: absolute;
-    left: -30px;
+    left: rem(-30px);
   }
 
   &:before {
     top: 0;
     bottom: 50%;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
   }
 
   &:after {
-    bottom: -22px;
+    bottom: rem(-22px);
     top: 50%;
-    margin-top: 10px;
+    margin-top: rem(10px);
   }
 
   &:hover {
@@ -129,28 +129,28 @@
   right: 100%;
   top: 50%;
   line-height: 16px;
-  margin-top: -8px;
-  margin-right: 43px;
+  margin-top: rem(-8px);
+  margin-right: rem(43px);
 
   &:after {
     content: "";
-    width: 10px;
-    height: 10px;
+    width: rem(10px);
+    height: rem(10px);
     background: $blue;
     border-radius: 50%;
     position: absolute;
-    right: -19px;
+    right: rem(-19px);
     top: 50%;
-    margin-top: -5px;
+    margin-top: rem(-5px);
     z-index: 1;
   }
 }
 
 .career__item:hover .career__year::after {
-  width: 15px;
-  height: 15px;
-  right: -21px;
+  width: rem(15px);
+  height: rem(15px);
+  right: rem(-21px);
   top: 50%;
-  margin-top: -8px;
+  margin-top: rem(-8px);
   opacity: 0.8;
 }
