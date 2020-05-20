@@ -1,6 +1,12 @@
 .career__left {
   width: rem(220px);
   float: left;
+
+  @include tablet {
+    margin: auto;
+    float: none;
+    background-color: red;
+  }
 }
 
 .slider {
@@ -9,13 +15,13 @@
   overflow: hidden;
 }
 .slider__list-wrap {
-  width: rem(220px);
-  height: rem(220px);
+  width: 220px;
+  height: 220px;
   overflow: hidden;
 }
 .slider__list {
   @extend %clearfix;
-  width: rem(1000px);
+  width: 1000px;
   position: relative;
   transition: 0.3s;
   left: 0px;
@@ -23,8 +29,8 @@
 .slider__item {
   float: left;
   display: block;
-  width: rem(220px);
-  height: rem(220px);
+  width: 220px;
+  height: 220px;
 
   img {
     max-width: 100%;

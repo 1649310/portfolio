@@ -1,12 +1,19 @@
 .footer {
   background: $black;
   @extend %clearfix;
+  @include xs {
+    height: auto;
+  }
 }
 .footer__left {
   float: left;
   width: 50%;
   @include tablet {
     width: 70%;
+  }
+  @include xs {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -25,11 +32,18 @@
   @include tablet {
     width: 30%;
   }
+  @include xs {
+    width: 100%;
+  }
 }
 .socials {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @include xs {
+    justify-content: center;
+    margin-bottom: 10px;
+  }
 }
 .socials__item {
   list-style: none;

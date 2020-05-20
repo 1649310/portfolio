@@ -52,17 +52,26 @@
   &:before {
     font-family: "FontAwesome";
     content: "\f21b";
+    @include xxs {
+      display: none;
+    }
   }
 }
 .nav__link-rocket {
   &:before {
     font-family: "FontAwesome";
     content: "\f135";
+    @include xxs {
+      display: none;
+    }
   }
 }
 .nav__link-briefcase {
   &:before {
     font-family: "FontAwesome";
     content: "\f0b1";
+    @include xxs {
+      display: none;
+    }
   }
 }

@@ -19,7 +19,7 @@
     font-size: 15px;
   }
   .container {
-    width: 550px;
+    width: 650px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -35,6 +35,14 @@
     font-size: 12px;
   }
   .container {
-    width: auto;
+    width: 375px;
+  }
+}
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    width: 320px;
   }
 }

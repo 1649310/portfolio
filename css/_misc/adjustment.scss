@@ -40,7 +40,9 @@ body {
 * {
   box-sizing: border-box;
 }
-
+a {
+  text-decoration: none;
+}
 ul,
 ol {
   padding: 0;

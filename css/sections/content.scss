@@ -45,6 +45,10 @@
     width: 220px;
     height: 220px;
   }
+  @include xs {
+    width: 180px;
+    height: 180px;
+  }
 }
 .about__pic-img {
   display: block;
@@ -57,9 +61,6 @@
   float: right;
   @include laptop {
     width: rem(450px);
-  }
-  @include tablet {
-    width: 335px;
   }
   @include phone {
     width: 100%;
@@ -74,11 +75,17 @@
   @include laptop {
     font-size: rem(30px);
   }
+  @include xs {
+    text-align: center;
+  }
 }
 .about__desc {
   margin-bottom: rem(50px);
   height: rem(350px);
   overflow: auto;
+  @include xs {
+    height: auto;
+  }
   p {
     font-size: rem(18px);
     color: #646464;
@@ -89,10 +96,20 @@
 }
 
 .about__download {
-  text-align: right;
+  text-align: center;
+  display: none;
+  @include xs {
+    display: block;
+  }
 }
-
-.about__download-link {
+.about__show {
+  text-align: right;
+  @include xs {
+    display: none;
+  }
+}
+.about__download-link,
+.about__show-link {
   border: 2px solid $red;
   border-radius: 50px;
   display: inline-block;
@@ -107,6 +124,12 @@
     color: #fff;
     background-color: $red;
     transition: 0.3s;
+  }
+}
+.about__show-link-show {
+  &:before {
+    font-family: "FontAwesome";
+    content: "\f0c6";
   }
 }
 
