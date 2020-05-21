@@ -20,6 +20,9 @@
 }
 .nav__list {
   list-style: none;
+  @include phone {
+    text-align: center;
+  }
 }
 
 .nav__link {
@@ -37,7 +40,6 @@
     transition: 0.3s;
   }
 }
-
 .nav__link-active {
   color: $blue;
   border-color: $blue;

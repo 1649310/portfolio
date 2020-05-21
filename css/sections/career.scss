@@ -1,11 +1,11 @@
 .career__left {
-  width: rem(220px);
+  width: 220px;
   float: left;
 
   @include tablet {
     margin: auto;
     float: none;
-    background-color: red;
+    margin-bottom: 20px;
   }
 }
 
@@ -54,6 +54,13 @@
 .career__right {
   width: rem(460px);
   float: right;
+  @include tablet {
+    float: none;
+    margin: auto;
+  }
+  @include xxs {
+    width: 100%;
+  }
 }
 .career__list {
   list-style: none;
@@ -93,6 +100,9 @@
   border-radius: 9px;
   padding: rem(15px);
   font-weight: 300;
+  @include xxs {
+    width: 26.75rem;
+  }
 
   &:before,
   &:after {
@@ -108,12 +118,20 @@
     top: 0;
     bottom: 50%;
     margin-bottom: rem(10px);
+    @include xxs {
+      width: 0;
+      display: none;
+    }
   }
 
   &:after {
     bottom: rem(-22px);
     top: 50%;
     margin-top: rem(10px);
+    @include xxs {
+      width: 0;
+      display: none;
+    }
   }
 
   &:hover {
@@ -137,6 +155,9 @@
   line-height: 16px;
   margin-top: rem(-8px);
   margin-right: rem(43px);
+  @include xxs {
+    display: none;
+  }
 
   &:after {
     content: "";

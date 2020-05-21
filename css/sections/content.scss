@@ -98,13 +98,13 @@
 .about__download {
   text-align: center;
   display: none;
-  @include xs {
+  @include laptop {
     display: block;
   }
 }
 .about__show {
   text-align: right;
-  @include xs {
+  @include laptop {
     display: none;
   }
 }
