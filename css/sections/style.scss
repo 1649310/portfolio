@@ -14,6 +14,9 @@
   visibility: hidden;
   pointer-events: none;
   transition: all 0.3s ease;
+  @include desktop {
+    width: 57.6875rem;
+  }
 
   &.active {
     display: flex;
@@ -27,10 +30,16 @@
 .popup__sidebar {
   background-color: #1e2939;
   width: 20.75rem;
+  @include desktop {
+    width: 17.75rem;
+  }
 }
 .popup-sidebar__photo {
   width: 20.75rem;
   margin-top: rem(20px);
+  @include desktop {
+    width: 17.75rem;
+  }
 }
 .popup-sidebar__photo-img {
   max-width: 100%;
@@ -39,7 +48,7 @@
 .popup-sidebar__content {
   padding: rem(50px) rem(50px) rem(15px);
   @include desktop {
-    padding-top: 30px;
+    padding: 30px;
   }
 }
 .popup-sidebar__title {

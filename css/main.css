@@ -4541,6 +4541,9 @@ yx-axis
   visibility: hidden;
   pointer-events: none;
   transition: all 0.3s ease; }
+  @media screen and (max-width: 1200px) {
+    .popup {
+      width: 57.6875rem; } }
   .popup.active {
     display: flex;
     opacity: 1;
@@ -4551,10 +4554,16 @@ yx-axis
 .popup__sidebar {
   background-color: #1e2939;
   width: 20.75rem; }
+  @media screen and (max-width: 1200px) {
+    .popup__sidebar {
+      width: 17.75rem; } }
 
 .popup-sidebar__photo {
   width: 20.75rem;
   margin-top: 1.25rem; }
+  @media screen and (max-width: 1200px) {
+    .popup-sidebar__photo {
+      width: 17.75rem; } }
 
 .popup-sidebar__photo-img {
   max-width: 100%;
@@ -4564,7 +4573,7 @@ yx-axis
   padding: 3.125rem 3.125rem 0.9375rem; }
   @media screen and (max-width: 1200px) {
     .popup-sidebar__content {
-      padding-top: 30px; } }
+      padding: 30px; } }
 
 .popup-sidebar__title {
   font-size: 1.375rem;
@@ -4759,7 +4768,7 @@ yx-axis
 .career__left {
   width: 220px;
   float: left; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 575px) {
     .career__left {
       margin: auto;
       float: none;
@@ -4806,6 +4815,9 @@ yx-axis
   float: right; }
   @media screen and (max-width: 768px) {
     .career__right {
+      width: 27.75rem; } }
+  @media screen and (max-width: 575px) {
+    .career__right {
       float: none;
       margin: auto; } }
   @media screen and (max-width: 375px) {
@@ -4837,6 +4849,9 @@ yx-axis
   border-radius: 9px;
   padding: 0.9375rem;
   font-weight: 300; }
+  @media screen and (max-width: 768px) {
+    .career__block {
+      width: 21.75rem; } }
   @media screen and (max-width: 375px) {
     .career__block {
       width: 26.75rem; } }

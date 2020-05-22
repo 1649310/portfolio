@@ -2,7 +2,7 @@
   width: 220px;
   float: left;
 
-  @include tablet {
+  @include phone {
     margin: auto;
     float: none;
     margin-bottom: 20px;
@@ -55,6 +55,9 @@
   width: rem(460px);
   float: right;
   @include tablet {
+    width: 27.75rem;
+  }
+  @include phone {
     float: none;
     margin: auto;
   }
@@ -100,6 +103,9 @@
   border-radius: 9px;
   padding: rem(15px);
   font-weight: 300;
+  @include tablet {
+    width: 21.75rem;
+  }
   @include xxs {
     width: 26.75rem;
   }
