@@ -40,7 +40,7 @@
     transition: 0.3s;
   }
 }
-.nav__link-active {
+.nav__link_active {
   color: $blue;
   border-color: $blue;
   font-weight: 700;
@@ -50,7 +50,7 @@
   }
 }
 
-.nav__link-user-secret {
+.nav__link_user-secret {
   &:before {
     font-family: "FontAwesome";
     content: "\f21b";
@@ -59,7 +59,7 @@
     }
   }
 }
-.nav__link-rocket {
+.nav__link_rocket {
   &:before {
     font-family: "FontAwesome";
     content: "\f135";
@@ -68,7 +68,7 @@
     }
   }
 }
-.nav__link-briefcase {
+.nav__link_briefcase {
   &:before {
     font-family: "FontAwesome";
     content: "\f0b1";

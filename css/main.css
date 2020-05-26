@@ -327,6 +327,9 @@ body {
   overflow: hidden;
   position: relative;
   min-width: 960px; }
+  @media screen and (max-width: 768px) {
+    .wrapper {
+      min-width: 0; } }
   .wrapper:after {
     content: "";
     display: block;
@@ -358,6 +361,9 @@ ol {
   margin-top: -50px;
   position: relative;
   min-width: 960px; }
+  @media screen and (max-width: 768px) {
+    .footer {
+      min-width: 0; } }
 
 h1,
 h2,
@@ -4355,33 +4361,33 @@ yx-axis
     color: #33c1e3;
     transition: 0.3s; }
 
-.nav__link-active {
+.nav__link_active {
   color: #33c1e3;
   border-color: #33c1e3;
   font-weight: 700; }
   @media screen and (max-width: 992px) {
-    .nav__link-active {
+    .nav__link_active {
       border: 0 none; } }
 
-.nav__link-user-secret:before {
+.nav__link_user-secret:before {
   font-family: "FontAwesome";
   content: "\f21b"; }
   @media screen and (max-width: 375px) {
-    .nav__link-user-secret:before {
+    .nav__link_user-secret:before {
       display: none; } }
 
-.nav__link-rocket:before {
+.nav__link_rocket:before {
   font-family: "FontAwesome";
   content: "\f135"; }
   @media screen and (max-width: 375px) {
-    .nav__link-rocket:before {
+    .nav__link_rocket:before {
       display: none; } }
 
-.nav__link-briefcase:before {
+.nav__link_briefcase:before {
   font-family: "FontAwesome";
   content: "\f0b1"; }
   @media screen and (max-width: 375px) {
-    .nav__link-briefcase:before {
+    .nav__link_briefcase:before {
       display: none; } }
 
 .page-content {
@@ -4831,6 +4837,9 @@ yx-axis
   text-align: right;
   margin-bottom: 1.25rem;
   color: #727272; }
+  @media screen and (max-width: 375px) {
+    .career__item {
+      text-align: center; } }
   .career__item:hover {
     cursor: pointer;
     transition: 0.3s; }
@@ -4854,7 +4863,7 @@ yx-axis
       width: 21.75rem; } }
   @media screen and (max-width: 375px) {
     .career__block {
-      width: 26.75rem; } }
+      width: 310px; } }
   .career__block:before, .career__block:after {
     content: "";
     display: block;
@@ -5050,6 +5059,6 @@ yx-axis
     font-size: 12px; }
 
   .container {
-    width: 320px; } }
+    width: auto; } }
 
 /*# sourceMappingURL=main.css.map */
