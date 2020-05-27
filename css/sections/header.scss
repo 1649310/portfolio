@@ -74,7 +74,7 @@
   transition: 0.3s;
 }
 
-.contacts__dropdown-link-email {
+.contacts__dropdown-link_email {
   &:before {
     font-family: "FontAwesome";
     content: "\f0e0";
@@ -82,7 +82,7 @@
   }
 }
 
-.contacts__dropdown-link-phone {
+.contacts__dropdown-link_phone {
   &:before {
     font-family: "FontAwesome";
     content: "\f095";
@@ -90,7 +90,7 @@
   }
 }
 
-.contacts__dropdown-link-skype {
+.contacts__dropdown-link_skype {
   &:before {
     font-family: "FontAwesome";
     content: "\f17e";

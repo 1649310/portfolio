@@ -4085,7 +4085,7 @@ yx-axis
   background-color: rgba(255, 255, 255, 0.9); }
 
 /* ---------------------------------------- */
-.wrapper__auth {
+.wrapper_auth {
   position: absolute;
   top: 0;
   left: 0;
@@ -4093,7 +4093,7 @@ yx-axis
   bottom: 0;
   text-align: center;
   min-width: 19.375rem; }
-  .wrapper__auth:before {
+  .wrapper_auth:before {
     content: "";
     display: inline-block;
     height: 100%;
@@ -4226,17 +4226,17 @@ yx-axis
   color: #e85f61;
   transition: 0.3s; }
 
-.contacts__dropdown-link-email:before {
+.contacts__dropdown-link_email:before {
   font-family: "FontAwesome";
   content: "\f0e0";
   color: #33c1e3; }
 
-.contacts__dropdown-link-phone:before {
+.contacts__dropdown-link_phone:before {
   font-family: "FontAwesome";
   content: "\f095";
   color: #33c1e3; }
 
-.contacts__dropdown-link-skype:before {
+.contacts__dropdown-link_skype:before {
   font-family: "FontAwesome";
   content: "\f17e";
   color: #33c1e3; }
@@ -4509,11 +4509,11 @@ yx-axis
     background-color: #e85f61;
     transition: 0.3s; }
 
-.about__show-link-show:before {
+.about__show-link_show:before {
   font-family: "FontAwesome";
   content: "\f0c6"; }
 
-.about__download-link-dowload:before {
+.about__download-link_dowload:before {
   font-family: "FontAwesome";
   content: "\f019"; }
 
@@ -4622,7 +4622,7 @@ yx-axis
     .popup-container {
       padding: 30px 60px; } }
 
-.popup-close {
+.popup__close {
   position: absolute;
   top: 0;
   right: 0;
@@ -4640,11 +4640,11 @@ yx-axis
   font-weight: 700;
   margin-bottom: 0.9375rem; }
 
-.popup-title {
+.popup__title {
   font-size: 1.75rem;
   font-weight: 700; }
   @media screen and (max-width: 1200px) {
-    .popup-title {
+    .popup__title {
       font-size: 25px; } }
 
 .projects__content {

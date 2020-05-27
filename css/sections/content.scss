@@ -126,14 +126,14 @@
     transition: 0.3s;
   }
 }
-.about__show-link-show {
+.about__show-link_show {
   &:before {
     font-family: "FontAwesome";
     content: "\f0c6";
   }
 }
 
-.about__download-link-dowload {
+.about__download-link_dowload {
   &:before {
     font-family: "FontAwesome";
     content: "\f019";

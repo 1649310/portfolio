@@ -43,7 +43,7 @@
                   <li class="contacts__dropdown-item">
                     <a
                       href="mailto:mikhaylenkoyuliya@gmail.com"
-                      class="contacts__dropdown-link contacts__dropdown-link-email"
+                      class="contacts__dropdown-link contacts__dropdown-link_email"
                     >
                       mikhaylenkoyuliya@gmail.com
                     </a>
@@ -51,7 +51,7 @@
                   <li class="contacts__dropdown-item">
                     <a
                       href="tel:+380501649310"
-                      class="contacts__dropdown-link contacts__dropdown-link-phone"
+                      class="contacts__dropdown-link contacts__dropdown-link_phone"
                     >
                       +38 050 164 93 10
                     </a>
@@ -59,7 +59,7 @@
                   <li class="contacts__dropdown-item">
                     <a
                       href="skype:yuliy-mikhajlenko?call"
-                      class="contacts__dropdown-link contacts__dropdown-link-skype"
+                      class="contacts__dropdown-link contacts__dropdown-link_skype"
                     >
                       yuliy-mikhajlenko
                     </a>
@@ -72,21 +72,21 @@
                   <li class="contacts__adaptive-item">
                     <a
                       href="mailto:mikhaylenkoyuliya@gmail.com"
-                      class="contacts__adaptive-link contacts__dropdown-link-email"
+                      class="contacts__adaptive-link contacts__dropdown-link_email"
                     >
                     </a>
                   </li>
                   <li class="contacts__adaptive-item">
                     <a
                       href="tel:+380501649310"
-                      class="contacts__adaptive-link contacts__dropdown-link-phone"
+                      class="contacts__adaptive-link contacts__dropdown-link_phone"
                     >
                     </a>
                   </li>
                   <li class="contacts__adaptive-item">
                     <a
                       href="skype:yuliy-mikhajlenko?call"
-                      class="contacts__adaptive-link contacts__dropdown-link-skype"
+                      class="contacts__adaptive-link contacts__dropdown-link_skype"
                     >
                     </a>
                   </li>
@@ -95,6 +95,7 @@
             </div>
           </div>
         </header>
+
         <div class="content">
           <div class="container">
             <!-- sidebar -->
@@ -176,13 +177,13 @@
                     </p>
                   </div>
                   <div class="about__show">
-                    <a class="about__show-link about__show-link-show">
+                    <a class="about__show-link about__show-link_show">
                       Посмотреть резюме
                     </a>
                   </div>
                   <div class="about__download">
                     <a
-                      class="about__download-link about__download-link-dowload"
+                      class="about__download-link about__download-link_dowload"
                       href="YuliyaMikhaylenko_CV.pdf"
                       download
                     >
@@ -341,12 +342,12 @@
       </div>
 
       <!-- PAGE-CONTENT -->
-      <div class="popup-page-content">
+      <div class="popup__page-content">
         <div class="popup-container">
-          <button class="popup-close" type="button">X</button>
+          <button class="popup__close" type="button">X</button>
           <div class="about__content">
             <h2 class="about__position">Junior Front-End Developer</h2>
-            <h1 class="popup-title">Yuliya Mikhaylenko</h1>
+            <h1 class="popup__title">Yuliya Mikhaylenko</h1>
           </div>
           <!-- work Experience -->
           <div class="work__content">
@@ -459,7 +460,7 @@
       $(".about__show-link").click(function() {
         $(".popup").addClass("active");
       });
-      $(".popup-close").click(function() {
+      $(".popup__close").click(function() {
         $(".popup").removeClass("active");
       });
     </script>
