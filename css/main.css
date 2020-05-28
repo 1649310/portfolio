@@ -4419,8 +4419,8 @@ yx-axis
   border-radius: 50%;
   border: 0.3125rem solid #fff;
   display: inline-block;
-  width: 13.75rem;
-  height: 13.75rem; }
+  width: 14.375rem;
+  height: 14.375rem; }
   @media screen and (max-width: 768px) {
     .about__pic {
       width: 14.75rem;
@@ -4440,7 +4440,7 @@ yx-axis
   max-height: 100%; }
 
 .about__right {
-  width: 24.375rem;
+  width: 25.625rem;
   float: right; }
   @media screen and (max-width: 992px) {
     .about__right {
@@ -4463,7 +4463,7 @@ yx-axis
 
 .about__desc {
   margin-bottom: 3.125rem;
-  height: 21.875rem;
+  height: 25rem;
   overflow: auto; }
   @media screen and (max-width: 480px) {
     .about__desc {
@@ -4552,7 +4552,7 @@ yx-axis
   background: #fff;
   width: 65.6875rem;
   height: auto;
-  margin: auto;
+  margin: 20px auto 20px;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
   display: flex; }
   @media screen and (max-width: 1200px) {
@@ -4775,13 +4775,14 @@ yx-axis
   height: 2.1875rem; }
 
 .career__left {
-  width: 220px;
+  width: 230px;
   float: left; }
   @media screen and (max-width: 768px) {
     .career__left {
       margin: auto;
       float: none;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px;
+      width: 200px; } }
 
 .slider {
   position: relative;
@@ -4789,12 +4790,16 @@ yx-axis
   overflow: hidden; }
 
 .slider__list-wrap {
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .slider__list-wrap {
+      width: 200px;
+      height: 200px; } }
 
 .slider__list {
-  width: 1000px;
+  width: 1200px;
   position: relative;
   transition: 0.3s;
   left: 0px; }
@@ -4802,8 +4807,12 @@ yx-axis
 .slider__item {
   float: left;
   display: block;
-  width: 220px;
-  height: 220px; }
+  width: 230px;
+  height: 230px; }
+  @media screen and (max-width: 768px) {
+    .slider__item {
+      width: 200px;
+      height: 200px; } }
   .slider__item img {
     max-width: 100%;
     max-height: 100%; }
@@ -4847,7 +4856,7 @@ yx-axis
     display: none; }
 
 .career__block {
-  width: 23.75rem;
+  width: 21.875rem;
   border: 1px solid #dedede;
   display: inline-block;
   position: relative;
@@ -4856,9 +4865,12 @@ yx-axis
   border-radius: 9px;
   padding: 0.9375rem;
   font-weight: 300; }
+  @media screen and (max-width: 992px) {
+    .career__block {
+      width: 23.75rem; } }
   @media screen and (max-width: 768px) {
     .career__block {
-      width: 21.75rem; } }
+      width: 22.75rem; } }
   @media screen and (max-width: 375px) {
     .career__block {
       width: 310px; } }

@@ -1,11 +1,12 @@
 .career__left {
-  width: 220px;
+  width: 230px;
   float: left;
 
   @include tablet {
     margin: auto;
     float: none;
     margin-bottom: 20px;
+    width: 200px;
   }
 }
 
@@ -15,13 +16,17 @@
   overflow: hidden;
 }
 .slider__list-wrap {
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
   overflow: hidden;
+  @include tablet {
+    width: 200px;
+    height: 200px;
+  }
 }
 .slider__list {
   @extend %clearfix;
-  width: 1000px;
+  width: 1200px;
   position: relative;
   transition: 0.3s;
   left: 0px;
@@ -29,8 +34,12 @@
 .slider__item {
   float: left;
   display: block;
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
+  @include tablet {
+    width: 200px;
+    height: 200px;
+  }
 
   img {
     max-width: 100%;
@@ -93,7 +102,7 @@
   }
 }
 .career__block {
-  width: rem(380px);
+  width: rem(350px);
   border: 1px solid #dedede;
   display: inline-block;
   position: relative;
@@ -102,8 +111,11 @@
   border-radius: 9px;
   padding: rem(15px);
   font-weight: 300;
+  @include laptop {
+    width: rem(380px);
+  }
   @include tablet {
-    width: 21.75rem;
+    width: 22.75rem;
   }
   @include xxs {
     width: 310px;

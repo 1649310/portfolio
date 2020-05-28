@@ -32,8 +32,8 @@
   border-radius: 50%;
   border: rem(5px) solid #fff;
   display: inline-block;
-  width: rem(220px);
-  height: rem(220px);
+  width: rem(230px);
+  height: rem(230px);
   @include tablet {
     width: 14.75rem;
     height: 14.75rem;
@@ -55,7 +55,7 @@
 }
 
 .about__right {
-  width: rem(390px);
+  width: rem(410px);
   float: right;
   @include laptop {
     width: rem(450px);
@@ -79,7 +79,7 @@
 }
 .about__desc {
   margin-bottom: rem(50px);
-  height: rem(350px);
+  height: rem(400px);
   overflow: auto;
   @include xs {
     height: auto;
