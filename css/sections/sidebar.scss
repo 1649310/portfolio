@@ -20,7 +20,7 @@
 }
 .nav__list {
   list-style: none;
-  @include phone {
+  @include xs {
     text-align: center;
   }
 }
@@ -54,7 +54,7 @@
   &:before {
     font-family: "FontAwesome";
     content: "\f21b";
-    @include xxs {
+    @include xs {
       display: none;
     }
   }
@@ -63,7 +63,7 @@
   &:before {
     font-family: "FontAwesome";
     content: "\f135";
-    @include xxs {
+    @include xs {
       display: none;
     }
   }
@@ -72,7 +72,7 @@
   &:before {
     font-family: "FontAwesome";
     content: "\f0b1";
-    @include xxs {
+    @include xs {
       display: none;
     }
   }

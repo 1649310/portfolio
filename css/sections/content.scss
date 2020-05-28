@@ -17,9 +17,6 @@
     text-align: center;
   }
   @include tablet {
-    width: rem(215px);
-  }
-  @include phone {
     width: 100%;
     margin-bottom: 15px;
   }
@@ -38,12 +35,13 @@
   width: rem(220px);
   height: rem(220px);
   @include tablet {
-    width: 180px;
-    height: 180px;
+    width: 14.75rem;
+    height: 14.75rem;
   }
+
   @include phone {
-    width: 220px;
-    height: 220px;
+    width: rem(220px);
+    height: rem(220px);
   }
   @include xs {
     width: 180px;
@@ -62,7 +60,7 @@
   @include laptop {
     width: rem(450px);
   }
-  @include phone {
+  @include tablet {
     width: 100%;
   }
 }
@@ -143,6 +141,9 @@
 .about .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: $blue;
   height: rem(130px);
+  @include xs {
+    display: none;
+  }
 }
 
 .about .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {

@@ -2,7 +2,7 @@
   width: 220px;
   float: left;
 
-  @include phone {
+  @include tablet {
     margin: auto;
     float: none;
     margin-bottom: 20px;
@@ -54,15 +54,11 @@
 .career__right {
   width: rem(460px);
   float: right;
+
   @include tablet {
-    width: 27.75rem;
-  }
-  @include phone {
     float: none;
     margin: auto;
-  }
-  @include xxs {
-    width: 100%;
+    width: 23.75rem;
   }
 }
 .career__list {

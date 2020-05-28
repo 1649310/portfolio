@@ -1,31 +1,33 @@
+.wrapper-popup {
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease;
+
+  &.active {
+    display: block;
+    opacity: 1;
+    pointer-events: all;
+    visibility: visible;
+  }
+}
 .popup {
   background: #fff;
   width: 65.6875rem;
   height: auto;
   margin: auto;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
-  z-index: 1;
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: all 0.3s ease;
+  display: flex;
   @include desktop {
     width: 57.6875rem;
   }
-
-  &.active {
-    display: flex;
-    opacity: 1;
-    pointer-events: all;
-    visibility: visible;
-  }
 }
-
 /* SIDEBAR */
 .popup__sidebar {
   background-color: #1e2939;

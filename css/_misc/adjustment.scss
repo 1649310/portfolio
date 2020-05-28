@@ -22,7 +22,7 @@ body {
   overflow: hidden;
   position: relative;
   min-width: $container-width + 20px;
-  @include tablet {
+  @include laptop {
     min-width: 0;
   }
 
@@ -58,7 +58,7 @@ ol {
   margin-top: -$footer-height;
   position: relative;
   min-width: $container-width + 20px;
-  @include tablet {
+  @include laptop {
     min-width: 0;
   }
 }
