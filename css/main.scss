@@ -6,11 +6,15 @@ $green: #727272;
 $red: #e85f61;
 
 // layout
+
 @import "_misc/mixins";
 @import "_misc/normalize";
 @import "_misc/adjustment";
+
+// plugints
 @import "plugints/font-awesome";
 @import "plugints/mCustomScrollbar";
+@import "plugints/slick";
 
 // styles
 @import "sections/auth";
