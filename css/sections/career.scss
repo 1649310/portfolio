@@ -8,6 +8,10 @@
     margin-bottom: 20px;
     width: 200px;
   }
+
+  @include phone {
+    width: 180px;
+  }
 }
 
 .slider {
@@ -22,6 +26,10 @@
   @include tablet {
     width: 200px;
     height: 200px;
+  }
+  @include phone {
+    width: 180px;
+    height: 180px;
   }
 }
 .slider__list {
@@ -39,6 +47,10 @@
   @include tablet {
     width: 200px;
     height: 200px;
+  }
+  @include phone {
+    width: 180px;
+    height: 180px;
   }
 
   img {
@@ -135,7 +147,7 @@
     top: 0;
     bottom: 50%;
     margin-bottom: rem(10px);
-    @include xxs {
+    @include xs {
       width: 0;
       display: none;
     }
@@ -145,7 +157,7 @@
     bottom: rem(-22px);
     top: 50%;
     margin-top: rem(10px);
-    @include xxs {
+    @include xs {
       width: 0;
       display: none;
     }
@@ -172,7 +184,7 @@
   line-height: 16px;
   margin-top: rem(-8px);
   margin-right: rem(43px);
-  @include xxs {
+  @include xs {
     display: none;
   }
 

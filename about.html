@@ -249,10 +249,8 @@
 
     <!-- POP-UP -->
     <div class="wrapper-popup">
-      <ul class="popup-slider__list">
-        <li class="popup-slider__item">
       <!-- pop-up-Ru -->
-          <div class="popup">
+          <div id="popup-ru" class="popup">
         <!-- SIDEBAR -->
             <div class="popup__sidebar">
               <div class="popup-sidebar__photo">
@@ -344,6 +342,7 @@
         <!-- PAGE-CONTENT -->
             <div class="popup__page-content">
               <div class="popup-container">
+                <button class="popup__lang" data-lang="en" type="button">en</button>
                 <button class="popup__close" type="button">X</button>
                 <div class="about__content">
                   <h2 class="about__position">Junior Front-End Developer</h2>
@@ -446,10 +445,8 @@
               </div>
             </div>
           </div>
-        </li>
-        <li class="popup-slider__list">
       <!-- pop-up-En -->
-          <div class="popup">
+          <div id="popup-en" class="popup">
         <!-- SIDEBAR -->
             <div class="popup__sidebar">
               <div class="popup-sidebar__photo">
@@ -534,6 +531,7 @@
         <!-- PAGE-CONTENT -->
             <div class="popup__page-content">
               <div class="popup-container">
+                <button class="popup__lang" data-lang="ru" type="button">ru</button>
                 <button class="popup__close" type="button">X</button>
                 <div class="about__content">
                   <h2 class="about__position">Junior Front-End Developer</h2>
@@ -635,16 +633,12 @@
               </div>
             </div>
           </div>
-        </li>  
-      </ul>
     </div>
-
-    
 
     <script src="js/jquery-3.0.1.min.js"></script>
     <script src="js/jquery.mCustomScrollbar.js"></script>
-    <script src="js/slick.js"></script>
-
+  
+      <!-- SCROLL -->
     <script>
       (function($) {
         $(window).on("load", function() {
@@ -653,24 +647,26 @@
       })(jQuery);
     </script>
 
+        <!-- POP-UP -->
     <script>
       $(".about__show-link").click(function() {
         $(".wrapper,.footer").css("filter", "blur(5px)");
+        $("body").css("overflow", "hidden");
         $(".wrapper-popup").addClass("active");
+        $(".popup").removeClass("active");
+        $("#popup-ru").addClass("active");
+      });
+      
+      
+      $(".popup__lang").click(function() {
+        const activeLang = $(this).data('lang');
+        $(".popup").removeClass("active");
+        $(`#popup-${activeLang}`).addClass("active");
       });
       $(".popup__close").click(function() {
         $(".wrapper,.footer").css("filter", "blur(0px)");
+        $('body').css("oveflow", "visible");
         $(".wrapper-popup").removeClass("active");
-      });
-    </script>
-    
-    <script>
-      $('.popup-slider__list').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
       });
     </script>
 
