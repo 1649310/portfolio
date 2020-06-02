@@ -137,7 +137,7 @@
                 <div class="about__left">
                   <div class="about__pic">
                     <img
-                      src="img/content/Yuliya-Mikhaylenko.jpg"
+                      src="img/content/about.jpg"
                       alt=""
                       class="about__pic-img"
                     />
@@ -256,7 +256,7 @@
               <div class="popup-sidebar__photo">
                 <img
                 class="popup-sidebar__photo-img"
-                src="img/content/photo.jpg"
+                src="img/content/rezume.jpg"
                 alt=""/>
               </div>
               <div class="popup-sidebar__content">
@@ -450,7 +450,7 @@
         <!-- SIDEBAR -->
             <div class="popup__sidebar">
               <div class="popup-sidebar__photo">
-                <img class="popup-sidebar__photo-img" src="img/content/photo.jpg" alt="" />
+                <img class="popup-sidebar__photo-img" src="img/content/auth.jpg" alt="" />
               </div>
               <div class="popup-sidebar__content">
             <!-- SIDEBAR CONTACTS-->
@@ -652,6 +652,7 @@
       $(".about__show-link").click(function() {
         $(".wrapper,.footer").css("filter", "blur(5px)");
         $("body").css("overflow", "hidden");
+        $(".maincontent").css("padding-bottom", "0px");
         $(".wrapper-popup").addClass("active");
         $(".popup").removeClass("active");
         $("#popup-ru").addClass("active");
@@ -665,7 +666,8 @@
       });
       $(".popup__close").click(function() {
         $(".wrapper,.footer").css("filter", "blur(0px)");
-        $('body').css("oveflow", "visible");
+        $("body").css("overflow", "auto");
+        $(".maincontent").css("padding-bottom", "50px");
         $(".wrapper-popup").removeClass("active");
       });
     </script>
