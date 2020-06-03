@@ -64,19 +64,6 @@
     width: 100%;
   }
 }
-
-.title {
-  font-size: rem(35px);
-  color: $black;
-  margin-bottom: rem(25px);
-  font-weight: 500;
-  @include laptop {
-    font-size: rem(30px);
-  }
-  @include xs {
-    text-align: center;
-  }
-}
 .about__desc {
   margin-bottom: rem(50px);
   height: rem(400px);

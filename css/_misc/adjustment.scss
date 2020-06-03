@@ -16,6 +16,9 @@ body {
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   background: $white;
+  @include laptop {
+    overflow: auto !important;
+  }
 }
 .wrapper {
   min-height: 100%;
@@ -24,6 +27,7 @@ body {
   min-width: $container-width + 20px;
   @include laptop {
     min-width: 0;
+    filter: blur(0px) !important;
   }
 
   &:after {
@@ -60,6 +64,7 @@ ol {
   min-width: $container-width + 20px;
   @include laptop {
     min-width: 0;
+    filter: blur(0px) !important;
   }
 }
 h1,
@@ -70,4 +75,16 @@ h5,
 h6 {
   margin-top: 0;
   font-weight: normal;
+}
+.title {
+  font-size: rem(35px);
+  color: $black;
+  margin-bottom: rem(25px);
+  font-weight: 500;
+  @include laptop {
+    font-size: rem(30px);
+  }
+  @include xs {
+    text-align: center;
+  }
 }

@@ -15,7 +15,16 @@
     opacity: 1;
     pointer-events: all;
     visibility: visible;
+    .maincontent {
+      padding-bottom: 0px;
+    }
+    @include laptop {
+      display: none;
+    }
   }
+}
+.wrapper-popup.active.maincontent {
+  padding-bottom: 0px;
 }
 .popup {
   position: absolute;
