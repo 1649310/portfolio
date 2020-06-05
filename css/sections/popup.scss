@@ -102,7 +102,7 @@
 .soft-skills__item {
   font-size: rem(14px);
   font-weight: 400;
-  color: #f5680a;
+  color: $red;
   margin-left: rem(15px);
 }
 .tech-skils__text,
@@ -129,7 +129,7 @@
   outline: none;
   width: rem(35px);
   height: rem(35px);
-  background-color: #f5680a;
+  background-color: $red;
   border-radius: 50%;
   cursor: pointer;
   color: #fff;
@@ -142,7 +142,7 @@
   outline: none;
   width: rem(35px);
   height: rem(35px);
-  background-color: #f5680a;
+  background-color: $red;
   border-radius: 50%;
   cursor: pointer;
   color: #fff;
@@ -193,7 +193,7 @@
   margin-bottom: rem(7px);
 }
 .work__company {
-  color: #ff761b;
+  color: $red;
 }
 .work__data {
   font-size: 12px;
@@ -213,7 +213,7 @@
   color: #595959;
 }
 .education__name {
-  color: #ff761b;
+  color: $red;
   font-size: rem(16px);
   font-weight: 700;
   margin-bottom: rem(10px);

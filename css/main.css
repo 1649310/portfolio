@@ -4180,7 +4180,8 @@ yx-axis
     transition: 0.3s; }
 
 .auth {
-  display: flex; }
+  display: flex;
+  justify-content: space-around; }
   @media screen and (max-width: 992px) {
     .auth {
       display: none; } }
@@ -4759,7 +4760,7 @@ yx-axis
   margin-bottom: 0.4375rem; }
 
 .work__company {
-  color: #ff761b; }
+  color: #f5680a; }
 
 .work__data {
   font-size: 12px;
@@ -4779,7 +4780,7 @@ yx-axis
   color: #595959; }
 
 .education__name {
-  color: #ff761b;
+  color: #f5680a;
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.625rem; }
@@ -4961,7 +4962,7 @@ yx-axis
       width: 22.75rem; } }
   @media screen and (max-width: 375px) {
     .career__block {
-      width: 310px; } }
+      width: 280px; } }
   .career__block:before, .career__block:after {
     content: "";
     display: block;

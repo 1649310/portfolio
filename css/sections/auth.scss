@@ -86,6 +86,7 @@
 }
 .auth {
   display: flex;
+  justify-content: space-around;
   @include laptop {
     display: none;
   }
