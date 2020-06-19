@@ -48,7 +48,7 @@
 }
 .portfolio__desc {
   background: #fff;
-  padding: rem(20px);
+  padding: rem(15px);
   max-width: rem(211px);
   max-height: rem(128px);
 
@@ -77,20 +77,20 @@
   font-weight: 500;
   font-size: rem(14px);
   color: $green;
-  margin-bottom: rem(15px);
+  margin-bottom: rem(5px);
 }
 .portfolio__desc-type,
 .portfolio__desc-desktop,
 .portfolio__desc-tablet,
 .portfolio__desc-mobile {
   color: #aeaeae;
-  font-size: rem(14px);
+  font-size: rem(12px);
   font-weight: 700;
 
   &:before {
     font-family: "FontAwesome";
     content: "\f108";
-    font-size: rem(18px);
+    font-size: rem(12px);
     margin: 0 rem(5px);
   }
 }
@@ -98,7 +98,7 @@
   &:before {
     font-family: "FontAwesome";
     content: "\f10a";
-    font-size: rem(18px);
+    font-size: rem(12px);
   }
 }
 .portfolio__desc-mobile {

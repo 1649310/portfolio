@@ -5072,7 +5072,7 @@ yx-axis
 
 .portfolio__desc {
   background: #fff;
-  padding: 1.25rem;
+  padding: 0.9375rem;
   max-width: 13.1875rem;
   max-height: 8rem; }
   @media screen and (max-width: 480px) {
@@ -5098,14 +5098,14 @@ yx-axis
   font-weight: 500;
   font-size: 0.875rem;
   color: #727272;
-  margin-bottom: 0.9375rem; }
+  margin-bottom: 0.3125rem; }
 
 .portfolio__desc-type,
 .portfolio__desc-desktop,
 .portfolio__desc-tablet,
 .portfolio__desc-mobile {
   color: #aeaeae;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 700; }
   .portfolio__desc-type:before,
   .portfolio__desc-desktop:before,
@@ -5113,13 +5113,13 @@ yx-axis
   .portfolio__desc-mobile:before {
     font-family: "FontAwesome";
     content: "\f108";
-    font-size: 1.125rem;
+    font-size: 0.75rem;
     margin: 0 0.3125rem; }
 
 .portfolio__desc-tablet:before {
   font-family: "FontAwesome";
   content: "\f10a";
-  font-size: 1.125rem; }
+  font-size: 0.75rem; }
 
 .portfolio__desc-mobile:before {
   font-family: "FontAwesome";
