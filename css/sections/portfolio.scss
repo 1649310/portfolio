@@ -79,18 +79,18 @@
   color: $green;
   margin-bottom: rem(5px);
 }
-.portfolio__desc-type,
+
 .portfolio__desc-desktop,
 .portfolio__desc-tablet,
 .portfolio__desc-mobile {
   color: #aeaeae;
-  font-size: rem(12px);
+  font-size: rem(11px);
   font-weight: 700;
 
   &:before {
     font-family: "FontAwesome";
     content: "\f108";
-    font-size: rem(12px);
+    font-size: rem(11px);
     margin: 0 rem(5px);
   }
 }
@@ -98,7 +98,7 @@
   &:before {
     font-family: "FontAwesome";
     content: "\f10a";
-    font-size: rem(12px);
+    font-size: rem(11px);
   }
 }
 .portfolio__desc-mobile {
